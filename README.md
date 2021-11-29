@@ -7,7 +7,6 @@
 | List Images             | ```docker images -a```                   |
 | Remove Image            | ```docker rmi Image```                   |
 | Remove All Images       | ```docker system prune -a```             |
-|                         |                                          |
 | List All Containers     | ```docker ps -a```                       |
 | List Running Containers | ```docker ps```                          |
 | List Stopped Containers | ```docker ps --filter "status=exited"``` |
