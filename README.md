@@ -44,7 +44,7 @@
     docker rmi Image
    
 #### Remove All Images
-
+    docker system prune -a
 
 ### Containers
 
@@ -59,8 +59,6 @@
     
 #### Remove Containers
     docker rm [container id]
-    
-#### 
    
 ## Composing
 
