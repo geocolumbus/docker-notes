@@ -35,7 +35,6 @@
 ## Basic Commands
 
 ### Images
-    docker system prune -a
 
 #### List
     docker images -a
