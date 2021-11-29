@@ -31,6 +31,38 @@
    my-nodejs-app       latest              28d7ff5c0c61        43 seconds ago      913MB
    node                12                  839a5e8f04b4        3 days ago          913MB
    ```
+   
+## Basic Commands
+
+### Images
+    docker system prune -a
+
+#### List
+    docker images -a
+
+#### Remove Image
+    docker rmi Image
+   
+#### Remove All Images
+
+
+### Containers
+
+#### All Containers
+    docker ps -a
+
+#### Running Containers
+    docker ps
+
+#### Stopped Containers
+    docker ps --filter "status=exited"
+    
+#### Remove Containers
+    docker rm [container id]
+    
+#### 
+   
+## Composing
 
 In your node project directory, create a ```docker-compose.yml``` file
 
