@@ -11,7 +11,8 @@
 | List Running Containers | ```docker ps```                          |
 | List Stopped Containers | ```docker ps --filter "status=exited"``` |
 | Remove Container        | ```docker rm [container id]```           |
-| Run a container         | ```docker run -p 3000:3000 geocolumbus/webby``` |                                          |
+| Run a container         | ```docker run -p 3000:3000 geocolumbus/webby``` |    
+| Remove all Containers | ```docker container prune -y``` |
 
 ## Create a Node Image
 
