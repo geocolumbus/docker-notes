@@ -13,7 +13,7 @@
 | Remove Container        | ```docker rm [container id]```           |
 | Run a container         | ```docker run -p 3000:3000 geocolumbus/webby``` |    
 | Remove all Containers | ```docker container prune -y``` |
-| Connect to mongo | mongodb://mongo:27017/dev-environment?compressors=disabled&gssapiServiceName=mongodb |
+| Connect to mongo | ```mongodb://mongo:27017/dev-environment?compressors=disabled&gssapiServiceName=mongodb``` |
 
 ## Create a Node Image
 
