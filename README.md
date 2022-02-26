@@ -63,6 +63,25 @@ Run the node source code in the current directory (assumes that package.json has
 docker-compose up -d
 ```
 
+## Exporting Images
+
+This will build a tar file whose architecture matches the machine upon which it was built.
+
+    docker pull 
+    docker image save -o linux1.tar 8e1d7573f448
+
+    arm32v6
+    arm32v7
+    arm64v8
+    amd64
+
+    arm32v5
+    ppc64le
+    s390x
+    mips64le
+    riscv64
+    i386
+
 ## Reference
 
 * [Docker Official Images](https://hub.docker.com/search?q=node&type=image&image_filter=official)
