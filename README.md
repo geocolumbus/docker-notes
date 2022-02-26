@@ -65,10 +65,28 @@ docker-compose up -d
 
 ## Exporting Images
 
-This will build a tar file whose architecture matches the machine upon which it was built.
+Example of creating a dockerized UI, saving it as a tar file, then importing it and running it.
 
-    docker pull 
-    docker image save -o linux1.tar 8e1d7573f448
+    vue create hello-world
+    cd hello-world
+    npm run build
+    cat > Dockerfile
+
+    FROM node:16
+    WORKDIR /app
+    COPY dist .
+    RUN npm install -g serve
+    CMD ["serve"]
+    
+    docker build -t vue1 .
+    
+    docker image save -o vue1.tar e366ac54d050
+    docker image rm e366ac54d050
+    docker load -i vue1.tar
+    docker run -p 3000:3000 vue1
+
+
+## List of Docker Platforms
 
     arm32v6
     arm32v7
