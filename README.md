@@ -14,6 +14,7 @@
 | Run a container         | ```docker run -p 3000:3000 geocolumbus/webby``` |    
 | Remove all Containers | ```docker container prune -y``` |
 | Connect to mongo | ``` mongo mongodb://mongo:27017/dev-environment -u application -p test``` |
+| Shell into container | ```docker exec -it <container> /bin/sh``` |
 
 ## Create a Node Image
 
